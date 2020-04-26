@@ -224,7 +224,7 @@ var config = {
     // control, it practically enables recv-side bandwidth estimations. When
     // both TCC and REMB are enabled, TCC takes precedence. When both are
     // disabled, then bandwidth estimations are disabled.
-    // enableRemb: false,
+    enableRemb: true,
 
     // Defines the minimum number of participants to start a call (the default
     // is set in Jicofo and set to 2).
@@ -250,7 +250,7 @@ var config = {
     // useNicks: false,
 
     // Require users to always specify a display name.
-    // requireDisplayName: true,
+    requireDisplayName: true,
 
     // Whether to use a welcome page or not. In case it's false a random room
     // will be joined when no room is specified.
@@ -264,7 +264,7 @@ var config = {
     // disable1On1Mode: false,
 
     // Default language for the user interface.
-    // defaultLanguage: 'en',
+    defaultLanguage: 'en',
 
     // If true all users without a token will be considered guests and all users
     // with token will be considered non-guests. Only guests will be allowed to
@@ -278,12 +278,12 @@ var config = {
     // lockRoomGuestEnabled: false,
 
     // When enabled the password used for locking a room is restricted to up to the number of digits specified
-    // roomPasswordNumberOfDigits: 10,
-    // default: roomPasswordNumberOfDigits: false,
+    roomPasswordNumberOfDigits: 10,
+    // default: roomPasswordNumberOfDigits : true,
 
     // Message to show the users. Example: 'The service will be down for
     // maintenance at 01:00 AM GMT,
-    // noticeMessage: '',
+    noticeMessage: 'This is a beta version can not host multiple conferences yet, we are still scaling our resources',
 
     // Enables calendar integration, depends on googleApiApplicationClientID
     // and microsoftApiApplicationClientID
@@ -318,7 +318,7 @@ var config = {
     // If third party requests are disabled, no other server will be contacted.
     // This means avatars will be locally generated and callstats integration
     // will not function.
-    // disableThirdPartyRequests: false,
+    disableThirdPartyRequests: true,
 
 
     // Peer-To-Peer mode: used (if enabled) when there are just 2 participants.
