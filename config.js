@@ -9,7 +9,7 @@ var config = {
         domain: 'jitsi-meet.example.com',
 
         // When using authentication, domain for guest users.
-        // anonymousdomain: 'guest.example.com',
+        anonymousdomain: 'guest.example.com',
 
         // Domain for authenticated users. Defaults to <domain>.
         // authdomain: 'jitsi-meet.example.com',
@@ -46,7 +46,7 @@ var config = {
     testing: {
         // P2P test mode disables automatic switching to P2P when there are 2
         // participants in the conference.
-        p2pTestMode: false
+        // p2pTestMode: false
 
         // Enables the test specific features consumed by jitsi-meet-torture
         // testMode: false
@@ -129,7 +129,7 @@ var config = {
     // enableLayerSuspension: false,
 
     // Every participant after the Nth will start video muted.
-    // startVideoMuted: 10,
+     startVideoMuted: 10,
 
     // Start calls with video muted. Unlike the option above, this one is only
     // applied locally. FIXME: having these 2 options is confusing.
@@ -139,7 +139,7 @@ var config = {
     // Note that it's not recommended to do this because simulcast is not
     // supported when  using H.264. For 1-to-1 calls this setting is enabled by
     // default and can be toggled in the p2p section.
-    // preferH264: true,
+    preferH264: true,
 
     // If set to true, disable H.264 video codec by stripping it out of the
     // SDP.
