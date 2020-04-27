@@ -6,10 +6,12 @@ var config = {
 
     hosts: {
         // XMPP domain.
-        domain: 'jitsi-meet.example.com',
-
+        domain: 'demo.xaber.online',
+        muc: 'conference.demo.xaber.online',
+        bridge: 'jitsi-videobridge.demo.xaber.online',
+        focus: 'focus.demo.xaber.online'
         // When using authentication, domain for guest users.
-        anonymousdomain: 'guest.example.com',
+        // anonymousdomain: 'guest.example.com',
 
         // Domain for authenticated users. Defaults to <domain>.
         // authdomain: 'jitsi-meet.example.com',
@@ -21,20 +23,20 @@ var config = {
         // call_control: 'callcontrol.jitsi-meet.example.com',
 
         // Focus component domain. Defaults to focus.<domain>.
-        // focus: 'focus.jitsi-meet.example.com',
+        // focus: 'focus.demo.xaber.online',
 
         // XMPP MUC domain. FIXME: use XEP-0030 to discover it.
-        muc: 'conference.jitsi-meet.example.com'
+        // muc: 'conference.demo.xaber.online'
     },
-
+    useNicks: false,
     // BOSH URL. FIXME: use XEP-0156 to discover it.
-    bosh: '//jitsi-meet.example.com/http-bind',
+    bosh: '//demo.xaber.online/http-bind',
 
     // Websocket URL
-    // websocket: 'wss://jitsi-meet.example.com/xmpp-websocket',
+    // websocket: 'wss://demo.xaber.online/xmpp-websocket',
 
     // The name of client node advertised in XEP-0115 'c' stanza
-    clientNode: 'http://jitsi.org/jitsimeet',
+    // clientNode: 'http://jitsi.org/jitsimeet',
 
     // The real JID of focus participant - can be overridden here
     // focusUserJid: 'focus@auth.jitsi-meet.example.com',
